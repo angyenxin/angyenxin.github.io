@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike</title>
+    <link rel="shortcut icon" href="nike.png" type="image/x-icon">
+</head>
+<style>
+    body {
+        background-color: lightgrey;
+        margin: 50px 250px 50px 250px;
+    }
+
+    .container {
+        position: absolute;
+        right: 400px;
+    }
+
+    .text {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    button {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .btn1 {
+        padding: 20px 50px 20px 50px;
+        border-radius: 24px;
+        background-color: white;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.432);
+
+    }
+
+    .btn2 {
+        padding: 20px 50px 20px 50px;
+        border-radius: 24px;
+        background-color: darkgrey;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.432);
+    }
+
+    .btn1:hover {
+        background-color: rgb(30, 30, 30);
+        color: white;
+        box-shadow: none;
+    }
+
+    .btn2:hover {
+        background-color: rgb(30, 30, 30);
+        color: white;
+        box-shadow: none;
+    }
+
+    .button {
+        display: flex;
+        gap: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        background-color: transparent;
+        border: none;
+        color: black;
+    }
+
+
+    a:hover {
+        border: none;
+        color: white;
+    }
+
+    img {
+        position: absolute;
+        border-radius: 16px;
+        margin-left: 50px;
+        margin-right: 50px;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.57);
+    }
+
+    del {
+        opacity: 0.3;
+    }
+</style>
+
+<body>
+
+    <img src="shoe.jpeg" alt="There is no image" height="500px" max-height="20px">
+
+    <div class="container">
+        <h3 class="text"><a href="https://shopee.com.my/">Back to Shopee</a></h3>
+        <h1 class="text">Nike Black Running Shoe</h1>
+        <h3 class="text">
+            <del>RM400.00</del>RM399.95 - in stock
+        </h3>
+        <h4 class="text">Free delivery</h4>
+
+        <br>
+
+        <div class="button">
+            <button class="btn1">Add to Cart</button>
+            <button class="btn2">Buy Now</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

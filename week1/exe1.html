@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emillie Website</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    body {
+        background-color: maroon;
+        margin: 0px 50px 0px 50px;
+    }
+
+    .background {
+        background-color: white;
+        height: 650px;
+        margin: 20px 80px 20px 80px;
+        padding: 2px;
+        box-shadow: inset 5px 5px 50px rgba(0, 0, 0, 0.838), inset 5px 5px 10px rgba(104, 0, 0, 0.789);
+    }
+
+    .intro {
+        text-align: center;
+    }
+
+    h1 {
+        font-family: cinzel decorative, serif;
+    }
+
+    .bd-font {
+        font-family: crimsonpro;
+    }
+
+    /* Below are the link for the artists */
+    .images-row {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .container {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        display: block;
+        box-shadow: 5px 5px 20px black;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin: 0;
+        display: block;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.3s;
+        font-size: 2em;
+        pointer-events: none;
+        /* overlay doesn't block image click */
+    }
+
+    .container:hover .overlay {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .overlay a {
+        text-decoration: none;
+        font-family: cinzel decorative, serif;
+        font-weight: bold;
+        color: tomato;
+    }
+</style>
+
+<body>
+    <div class="background">
+        <div class="intro">
+            <h3 class="bd-font">Hey there, I am..</h3>
+            <h1 class="alignment">Ang Yen Xin</h1>
+            <p class="bd-font">I am Ang Yen Xin, and you can address me as Emillie.
+            </p>
+            <p class="bd-font">A child born in Malaysia, future storyteller, innovator and a typography criminal.</p>
+            <p class="bd-font">I love center-align paragraph. </p>
+            <p class="bd-font">Thank You.</p>
+            <h2 class="bd-font">My favourite artists:</h2>
+        </div>
+
+
+        <div class="images-row">
+            <div class="container">
+                <img src="blackpink.jpg" alt="No Pic" height="300px">
+                <div class="overlay">
+                    <a href="https://www.instagram.com/blackpinkofficial/?hl=en">
+                        <p class="name">Blackpink</p>
+                    </a>
+                </div>
+            </div>
+            <div class="container">
+                <img src="cisha.jpg" alt="No Pic" height="300px">
+                <div class="overlay" position>
+                    <a href="https://xhslink.com/m/888NREeJzu6">
+                        <p class="name">Ci Sha</p>
+                    </a>
+                </div>
+            </div>
+            <div class="container">
+                <img src="straykids.jpg" alt="No Pic" height="300px">
+                <div class="overlay">
+                    <a href="https://www.instagram.com/realstraykids/?hl=en">
+                        <p class="name">Stray Kids</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
