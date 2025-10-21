@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box 1</title>
+
+    <style>
+        body {
+            background-color: #f6f5ef;
+            margin: 30px 200px;
+        }
+
+        .container {
+            display: flex;
+            width: calc(3);
+            justify-content: center;
+            gap: 30px;
+            font-family: oxygen, sans-serif;
+            height: 30%;
+        }
+
+        .container div {
+            padding: 20px;
+            background-color: white;
+            border-radius: 14px;
+        }
+
+        /**Child images*/
+        .c-a .img {
+            border-radius: 7px;
+            background-image: url(./images/building.jpg);
+            width: calc(100% - 40px);
+            aspect-ratio: 1 / 1;
+            height: 50%;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .c-b .img {
+            border-radius: 7px;
+            background-image: url(./images/room.jpg);
+            width: calc(100% - 40px);
+            aspect-ratio: 1 / 1;
+            height: 50%;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .c-c .img {
+            border-radius: 7px;
+            background-image: url(./images/house.jpg);
+            width: calc(100% - 40px);
+            aspect-ratio: 1 / 1;
+            height: 50%;
+            background-position: center;
+            background-size: cover;
+        }
+
+        /**font-size adjustment*/
+        h1 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: medium;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="c-a">
+            <!--<img src="./images/building.jpg" alt="Residential projects" width="300px">-->
+            <div class="img"></div>
+            <h1>Residential projects</h1>
+            <p>We build sustainable and modern homes for comfortable living.</p>
+        </div>
+
+        <div class="c-b">
+            <div class="img"></div>
+            <h1>Commercial spaces</h1>
+            <p>We create efficient, inspiring workspaces for businesses of all sizes</p>
+        </div>
+
+        <div class="c-c">
+            <div class="img"></div>
+            <h1>Infrastructure works</h1>
+            <p>We develop strong, reliable infrastructure for growing communities.</p>
+        </div>
+    </div>
+</body>
+
+</html>
