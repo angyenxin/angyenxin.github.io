@@ -4,26 +4,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Oxygen:wght@300;400;700&display=swap"
+        rel="stylesheet">
     <title>Flex Box 2</title>
     <style>
-        .icon {
-            size: 30px;
+        div.fullnav {
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            align-items: center;
+            margin: 20px;
+        }
+
+        div.halfnav {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+
+        div.mininav {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+
+        div.section1 {
+            width: 30px;
+            justify-content: flex-start;
+        }
+
+        div.section2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        li {
+            display: flex;
+            flex-direction: row;
+            font-family: "Archivo", sans-serif;
+        }
+
+        div.section3 {
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: row;
+            gap: 30px;
+        }
+
+        button {
+            background-color: #f9612b;
+            color: white;
+            border: none;
+            border-radius: 16px;
+            padding: 15px 20px;
+            position: relative;
+        }
+
+        h1 {
+            font-family: "Archivo", sans-serif;
+            font-size: medium;
         }
     </style>
 </head>
 
 <body>
-    <div class="nav">
-        <div class="img"><img src="./images/logo-light.png" alt="Logo Image"></div>
-        <div class="pages">
-            <h1>Home</h1>
-            <h1>Services</h1>
-            <h1>Work</h1>
-            <h1>Project Details</h1>
-            <h1>Contact</h1>
+    <div class="tidyspace">
+        <div class="fullnav">
+            <div class="section1">
+                <div class="img"><img src="./images/logo-light.png" alt="Logo Image"></div>
+            </div>
+            <div class="section2">
+                <li class="pages">
+                    <ul>Home</ul>
+                    <ul>Services</ul>
+                    <ul>Work</ul>
+                    <ul>Project Details</ul>
+                    <ul>Contact</ul>
+                </li>
+            </div>
+            <div class="section3">
+                <img src="./images/phonecall.png" alt="phone call icon" width="40px" height="40px">
+                <h1>555-123-4567</h1>
+                <button>Contact</button>
+            </div>
         </div>
-        <div class="icon">
-            <img src="" alt="">
+
+        <div class="halfnav">
+            <div class="section1">
+                <div class="img"><img src="./images/logo-light.png" alt="Logo Image"></div>
+            </div>
+            <div class="section3">
+                <img src="./images/phonecall.png" alt="phone call icon" width="40px" height="40px">
+                <h1>555-123-4567</h1>
+                <img src="./images/hamburgermenu.png" alt="hamburgermenu icon" width="40px" height="40px">
+            </div>
+        </div>
+
+        <div class="mininav">
+            <div class="section1">
+                <div class="img"><img src="./images/logo-light.png" alt="Logo Image"></div>
+            </div>
+            <div class="section3">
+                <img src="./images/hamburgermenu.png" alt="hamburgermenu icon" width="40px" height="40px">
+            </div>
         </div>
     </div>
 </body>
