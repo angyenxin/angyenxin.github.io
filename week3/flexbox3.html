@@ -5,27 +5,138 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex box 3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f7f7f7;
+            font-family: "Space Grotesk", sans-serif;
+            margin: 50px 100px;
+        }
+
+        /**nav*/
+        div.nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        div.section2 {
+            gap: 40px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+
+        li {
+            display: flex;
+            flex-direction: row;
+        }
+
+        /**content*/
+        div.content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 50px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        div.block1 {
+            width: 40%;
+            gap: 100px;
+        }
+
+        h1 {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 60px;
+        }
+
+        p li {
+            font-size: 20px;
+        }
+
+        p {
+            margin-top: 35px;
+            margin-bottom: 35px;
+        }
+
+        button.request {
+            background-color: transparent;
+            border: black, solid 1.5px;
+            border-radius: 14px;
+            font-family: "Space Grotesk", sans-serif;
+            font-size: medium;
+            padding: 20px 35px;
+        }
+
+        button.consultation {
+            background-color: black;
+            border: black, solid 1.5px;
+            border-radius: 14px;
+            font-family: "Space Grotesk", sans-serif;
+            font-size: medium;
+            color: #f7f7f7;
+            padding: 20px 35px;
+        }
+
+        .block2 {
+            background-image: url(./images/walkietakie.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 70%;
+        }
+
+        .sponsorer {
+            filter: grayscale(100%);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    </style>
 </head>
 
 <body>
     <div class="nav">
-        <div class="logo"></div>
-        <div class="pages">
-            <h1>About us</h1>
-            <h1>Services</h1>
-            <h1>Use Cases</h1>
-            <h1>Pricing</h1>
-            <h1>Blog</h1>
+        <div class="section1">
+            <img src="./images/positivus.png" alt="Positivus Logo" width="">
         </div>
-        <button>Request a quote</button>
+        <div class="section2">
+            <li>
+                <ul>About us</ul>
+                <ul>Services</ul>
+                <ul>Use Cases</ul>
+                <ul>Pricing</ul>
+                <ul>Blog</ul>
+            </li>
+            <button class="request">Request a quote</button>
+        </div>
+
     </div>
 
-    <div class="img"></div>
-    <div class="text">
-        <h1>Navigating the digital landscape for success</h1>
-        <p>Our digital marketing agency helps businesses grow and succeed online through a range of services including
-            SEO, PPC, social media marketing, and content creation</p>
-        <button>Book a consultation</button>
+    <div class="content">
+        <div class="block1">
+            <h1>Navigating the digital landscape for success</h1>
+            <p>Our digital marketing agency helps businesses grow and succeed online through a range of services
+                including
+                SEO, PPC, social media marketing, and content creation</p>
+            <button class="consultation">Book a consultation</button>
+        </div>
+        <div class="block2">
+        </div>
+    </div>
+
+    <div class="sponsorer">
+        <img src="./images/amazon.png" alt="amazon pic" height="60px">
+        <img src="./images/dribbble.png" alt="dribbble pic" height="60px">
+        <img src="./images/hubspot.png" alt="hubspot pic" height="60px">
+        <img src="./images/notion.png" alt="notion pic" height="60px">
+        <img src="./images/netflix.png" alt="netflix pic" height="60px">
+        <img src="./images/zoom.png" alt="zoom pic" height="60px">
+
     </div>
 </body>
 
