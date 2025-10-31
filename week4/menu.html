@@ -9,7 +9,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Oxygen:wght@300;400;700&display=swap"
         rel="stylesheet">
-    <title>Flex Box 2</title>
+    <title>menu</title>
     <style>
         div.fullnav {
             display: flex;
@@ -88,14 +88,39 @@
             margin: auto;
         }
 
-        @media max() {}
+        @media (max-width: 1280px) {
+            .pages {
+                display: none;
+            }
+
+            button {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                display: none;
+            }
+
+            div.phonecall {
+                display: none;
+            }
+
+        }
+
+        @media (min-width:1280px) {
+            img.hamburgermenu {
+                display: none;
+            }
+        }
     </style>
 </head>
 
 <body>
     <div class="fullnav">
         <div class="section1">
-            <div class="img"><img src="./images/logo-light.png" alt="Logo Image"></div>
+            <div class="img"><img src="./images/elementralogo.png" alt="Logo Image"></div>
         </div>
         <div class="section2">
             <li class="pages">
@@ -107,10 +132,13 @@
             </li>
         </div>
         <div class="section3">
-            <div class="phonecall"><img src="./images/phonecall.png" alt="phone call icon" width="25px" height="25px">
+            <div class="phonecall"><img src="./images/icon.svg" alt="phone call icon" width="25px" height="25px">
             </div>
             <h1>555-123-4567</h1>
             <button>Contact</button>
+            <img class="hamburgermenu" src="./images/hamburgermenu.png" alt="hamburgermenu icon" width="30px"
+                height="30px">
+
         </div>
     </div>
 </body>
