@@ -30,6 +30,8 @@
             display: flex;
             justify-content: space-between;
             padding: 10px 35px;
+            margin: 0;
+            box-sizing: border-box;
         }
 
         .socialmedia {
@@ -39,6 +41,7 @@
         .picture {
             border-radius: 100%;
             width: 30%;
+            margin-top: 40px;
         }
 
         /**Profile*/
@@ -58,11 +61,24 @@
             margin: 0;
         }
 
+
         h3 {
+            color: #F1DBBF;
+            font-family: "Crimson Pro", serif;
             margin: 10px;
-            font-size: 25px;
+            font-size: 30px;
         }
 
+        p {
+            color: #F1DBBF;
+            font-family: "Crimson Pro", serif;
+            margin: 10px;
+            font-size: 20px;
+        }
+
+        p.desc {
+            width: 70%;
+        }
 
         a {
             text-decoration: none;
@@ -87,6 +103,8 @@
             width: 80%;
             margin: auto;
             max-width: 70%;
+            margin-top: 30px;
+            margin-bottom: 30px;
         }
 
         .exe .container:last-child {
@@ -112,6 +130,14 @@
 
         h2.name {
             color: #F1DBBF;
+
+        }
+
+        h2.title {
+            color: #F1DBBF;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #F1DBBF;
+            margin-bottom: 20px;
         }
 
         footer {
@@ -152,11 +178,12 @@
     <header>
         <div class="logo"><img src="./images/logo.png" alt="Emillie Logo" height="50px"></div>
         <div class="socialmedia">
-            <a href="https://www.facebook.com/share/1FR22uT3VP/"><img src="images/facebook.png" alt="Facebook"
+            <a href="https://www.facebook.com/share/1FR22uT3VP/" target="_blank"><img src="images/facebook.png"
+                    alt="Facebook" height="50px"></a>
+            <a href="https://www.instagram.com/its_emillie0915?igsh=MW1qam9ldHp6YzNiZg==" target="_blank"><img
+                    src="images/insta.png" alt="Instagram" height="50px"></a>
+            <a href="https://xhslink.com/m/8dvqdZKNgFG" target="_blank"><img src="images/xhs.png" alt="XiaoHongShu"
                     height="50px"></a>
-            <a href="https://www.instagram.com/its_emillie0915?igsh=MW1qam9ldHp6YzNiZg=="><img src="images/insta.png"
-                    alt="Instagram" height="50px"></a>
-            <a href=""><img src="images/xhs.png" alt="XiaoHongShu" height="50px"></a>
         </div>
     </header>
 
@@ -164,46 +191,49 @@
         <div class="pic"><img class="picture" src="./images/me.jpeg" alt="Ang Yen Xin Photo"></div>
         <h1 class="name">Ang Yen Xin</h1>
         <h3 class="text">Web Publishing</h3>
-        <p class="text">Hello! I am Ang Yen Xin, a Digital Media Student. I love to write story, listen to music and
+        <p class="desc">Hello! I am Ang Yen Xin, a Digital Media Student. I love to write story, listen to music and
             reading. Welcome to my page!</p>
     </div>
 
     <div class="exe">
         <div class="container">
-            <h2 class="name"><i class="fa-solid fa-pen-to-square" aria-hidden="true"></i>
+            <h2 class="title"><i class="fa-solid fa-pen-to-square" aria-hidden="true"></i>
                 Week 1</h2>
-            <p class="text"><a href="./week1/exe1.html">Exercise 1</a></p>
-            <p class="text"><a href="./week1/exe2.html">Exercise 2</a></p>
+            <p class="text"><a href="./week1/exe1.html" target="_blank">Exercise 1</a></p>
+            <p class="text"><a href="./week1/exe2.html" target="_blank">Exercise 2</a></p>
         </div>
 
         <div class="container">
-            <h2 class="name"><i class="fa-solid fa-pen-to-square" aria-hidden="true"></i>
+            <h2 class="title"><i class="fa-solid fa-pen-to-square" aria-hidden="true"></i>
                 Week 2</h2>
-            <p class="text"><a href="./week2/button.html">Exercise 1</a></p>
-            <p class="text"><a href="./week2/self-intro.html">Exercise 2</a></p>
-            <p class="text"><a href="./week2/artist.html">Exercise 3</a></p>
+            <p class="text"><a href="./week2/button.html" target="_blank">Exercise 1</a></p>
+            <p class="text"><a href="./week2/self-intro.html" target="_blank">Exercise 2</a></p>
+            <p class="text"><a href="./week2/artist.html" target="_blank">Exercise 3</a></p>
         </div>
 
         <div class="container">
-            <h2 class="name"><i class="fa-solid fa-pen-to-square" aria-hidden="true"></i>
+            <h2 class="title"><i class="fa-solid fa-pen-to-square" aria-hidden="true"></i>
                 Week 3</h2>
-            <p class="text"><a href="./week3/flexbox1.html">Exercise 1</a></p>
-            <p class="text"><a href="./week3/flexbox2.html">Exercise 2</a></p>
-            <p class="text"><a href="./week3/flexbox3.html">Exercise 3</a></p>
+            <p class="text"><a href="./week3/flexbox1.html" target="_blank">Exercise 1</a></p>
+            <p class="text"><a href="./week3/flexbox2.html" target="_blank">Exercise 2</a></p>
+            <p class="text"><a href="./week3/flexbox3.html" target="_blank">Exercise 3</a></p>
         </div>
         <div class="container">
-            <h2 class="name"><i class="fa-solid fa-pen-to-square" aria-hidden="true"></i>
+            <h2 class="title"><i class="fa-solid fa-pen-to-square" aria-hidden="true"></i>
                 Week 4</h2>
-            <p class="text"><a href="./week3/flexbox1.html">Exercise 1</a></p>
-            <p class="text"><a href="./week3/flexbox2.html">Exercise 2</a></p>
-            <p class="text"><a href="./week3/flexbox3.html">Exercise 3</a></p>
+            <p class="text"><a href="./week4/menu.html" target="_blank">Exercise 1</a></p>
+            <p class="text"><a href="./week4/usecase.html" target="_blank">Exercise 2</a></p>
+            <p class="text"><a href="./index.html" target="_blank">Exercise 3</a></p>
         </div>
     </div>
     <footer>
         <div class="logo"></div>
-        <a href=""><img src="images/facebook.png" alt="Facebook" height="30px"></a>
-        <a href=""><img src="images/insta.png" alt="Instagram" height="30px"></a>
-        <a href=""><img src="images/xhs.png" alt="XiaoHongShu" height="0px"></a>
+        <a href="https://www.facebook.com/share/1FR22uT3VP/" target="_blank"><img src="images/facebook.png"
+                alt="Facebook" height="40px"></a>
+        <a href="https://www.instagram.com/its_emillie0915?igsh=MW1qam9ldHp6YzNiZg==" target="_blank"><img
+                src="images/insta.png" alt="Instagram" height="40px"></a>
+        <a href="https://xhslink.com/m/8dvqdZKNgFG" target="_blank"><img src="images/xhs.png" alt="XiaoHongShu"
+                height="40px"></a>
         <p class="text">© 2025 Ang Yen Xin. All rights reserved.</p>
     </footer>
 </body>
