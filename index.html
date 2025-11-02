@@ -63,27 +63,42 @@
             font-size: 25px;
         }
 
-        .text {
+
+        a {
+            text-decoration: none;
             color: #F1DBBF;
             font-family: "Crimson Pro", serif;
             margin: 10px;
             font-size: 20px;
         }
 
+        a:hover {
+            text-decoration: none;
+            color: #e9a247;
+            font-family: "Crimson Pro", serif;
+            margin: 10px;
+            font-size: 20px;
+        }
+
         div.exe {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            width: 80%;
+            margin: auto;
+            max-width: 70%;
+        }
+
+        .exe .container:last-child {
+            grid-column: 1 / -1;
         }
 
         div.container {
             flex: 0 0 calc(33.333% - 40px);
-            max-width: 28.1%;
             box-sizing: border-box;
-
+            width: 100%;
             display: block;
-            background-color: #B99B6B;
+            background-color: #b99b6bb2;
             border-radius: 24px;
             margin: 10px;
             padding: 15px 30px;
@@ -107,28 +122,27 @@
             padding: 10px;
         }
 
-        .exe .container:nth-child(4) {
-            flex: 1 1 100%;
-            max-width: none;
-            width: 100%;
-            align-self: center;
-        }
-
         /* responsive adjustments */
         @media (max-width: 900px) {
-            div.container {
-                flex: 0 0 calc(50% - 20px);
-                max-width: none;
+
+            div.exe {
+                /* We just change the number of grid columns. No need to change display type. */
+                grid-template-columns: repeat(2, 1fr);
+                width: 80%;
+                /* Optional: adjust width for smaller screens */
             }
 
-            .exe .container:nth-child(4) {
-                flex: 1 1 100%;
+            .exe .container:last-child {
+                grid-column: auto;
             }
         }
 
-        @media (max-width: 600px) {
-            div.container {
-                flex: 1 1 100%;
+
+        @media (max-width: 640px) {
+
+            div.exe {
+                grid-template-columns: 1fr;
+                width: 90%;
             }
         }
     </style>

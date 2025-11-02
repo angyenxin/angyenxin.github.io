@@ -5,13 +5,334 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>usecase</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <style>
+    body {
+        font-family: "Space Grotesk", sans-serif;
+        margin: 50px 100px;
+    }
 
+    div.nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    div.section2 {
+        gap: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    li {
+        display: flex;
+        flex-direction: row;
+    }
+
+    button.request {
+        background-color: transparent;
+        border: black, solid 1.5px;
+        border-radius: 14px;
+        font-family: "Space Grotesk", sans-serif;
+        font-size: medium;
+        padding: 20px 35px;
+    }
+
+    button.request:hover {
+        background-color: black;
+        color: #f7f7f7;
+    }
+
+    button.request:active {
+        background-color: #b9ff66;
+        color: black;
+    }
+
+    div.content1 {
+        background-color: #f3f3f3;
+        border-radius: 24px;
+        display: flex;
+        flex-direction: row;
+        padding: 70px;
+        gap: 20%;
+        margin: auto;
+        justify-content: center;
+        margin: 80px 0px;
+        align-content: center;
+        color: #191a23;
+    }
+
+    .content1.text {
+        color: #191a23;
+    }
+
+    .illustration {
+        width: 40%;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    div.content2 {
+        display: flex;
+        flex-direction: row;
+        background-color: #191a23;
+        border-radius: 24px;
+        padding: 7%;
+        gap: 50px;
+    }
+
+    div.textblock {
+        width: 50%;
+        align-content: flex-start;
+    }
+
+    div.title2 h2 {
+        background-color: #b9ff66;
+        color: #191a23;
+        border: none;
+        border-radius: 16px;
+        font-size: 36px;
+        margin-top: 0px;
+        width: max-content;
+        padding: 0px 20px;
+    }
+
+    .content2 .text h3 {
+        font-weight: lighter;
+        font-size: 30px;
+    }
+
+    .content2 .text h4 {
+        color: #b9ff66;
+        font-size: 20px;
+        font-weight: lighter;
+    }
+
+    /* ensure specific elements are white if needed */
+    .content2 .text h3,
+    .content2 .text p {
+        color: #ffffff;
+    }
+
+    div.wrap {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: flex-end;
+        align-content: flex-start;
+    }
+
+    div.container {
+        background-color: #ffffff;
+        border-radius: 24px;
+        padding: 5%;
+        height: 30%;
+        width: 30%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .container h2 {
+        font-size: 36px;
+        margin: 10%;
+    }
+
+    div.read {
+        display: flex;
+        flex-direction: row;
+        color: #b9ff66;
+        gap: 20px;
+        font-weight: lighter;
+        align-items: center;
+    }
+
+    div.responsiveblock {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+    }
+
+    @media(max-width:1200px) {
+
+        ul,
+        button.request {
+            font-size: small;
+        }
+
+    }
+
+    /**Responsive smaller screen*/
+    @media(max-width:1130px) {
+
+        div.section2 {
+            display: none;
+        }
+
+        /**content1*/
+        div.content1 {
+            background: none;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+        }
+
+        div.content1>.text {
+            display: contents;
+        }
+
+        div.content1>h1 {
+            order: 1;
+        }
+
+        div.content1>img.illustration {
+            width: 100%;
+            order: 2;
+        }
+
+        div.content1>p.description {
+            order: 3;
+        }
+
+        /**content2*/
+        div.content2 {
+            display: flex;
+            flex-direction: row;
+        }
+
+        img.vector {
+            height: 35px;
+            width: 35px;
+        }
+
+        div.title1 h2 {
+            background-color: #191a23;
+            color: #b9ff66;
+            font-size: 36px;
+            margin-top: 0px;
+        }
+
+        div.wrap {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+
+
+        }
+
+        div.title2 {
+            display: none;
+        }
+
+    }
+
+    @media (min-width:1130px) {
+        .hamburger {
+            display: none;
+        }
+
+        img.vector {
+            display: none;
+        }
+
+        div.responsiveblock {
+            flex-direction: row;
+            flex: 1;
+        }
+
+
+        div.wrap {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+
+        div.title1 {
+            display: none;
+        }
+    }
 </style>
 
 <body>
-    <div></div>
+
+    <div class="nav">
+        <div class="section1">
+            <img src="./images/positivus.png" alt="Positivus Logo" width="">
+        </div>
+        <div class="section2">
+            <li>
+                <ul>About us</ul>
+                <ul>Services</ul>
+                <ul>Use Cases</ul>
+                <ul>Pricing</ul>
+                <ul>Blog</ul>
+            </li>
+            <button class="request">Request a quote</button>
+        </div>
+        <div class="hamburger"><img src="./images/menuburger.png" alt="hamburger menu"></div>
+
+    </div>
+
+    <div class="content1">
+        <img class="illustration" src="./images/illustration.png" alt="Illustration">
+        <div class="text">
+            <h1>Proven Success Stories</h1>
+            <p class="description">See how our innovative digital marketing strategies have transformed businesses.
+                Whether through SEO,
+                PPC, social media, or web design, these use cases highlight the tangible impact of our work. Explore the
+                successes and envision what we can achieve together.</p>
+        </div>
+    </div>
+
+    <div class="content2">
+        <img class="vector" src="./images/vector.png" alt="star">
+        <div class="responsiveblock">
+            <div class="textblock">
+                <div class="title1">
+                    <h2>Featured</h2>
+                </div>
+                <div class="title2">
+                    <h2>Featured Success Story</h2>
+                </div>
+                <div class="text">
+                    <h3>Scaling Success for a Leading E-Commerce Brand</h3>
+                    <p>Through a comprehensive SEO and PPC strategy, we helped this e-commerce brand increase
+                        visibility,
+                        drive
+                        traffic, and boost sales.</p>
+                    <div class="read">
+                        <img src="./images/readbtn.png" alt="read button" width="50px" height="50px">
+                        <h4>Read More</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrap">
+                <div class="container">
+                    <h2>200%</h2>
+                    <p>increase in organic traffic</p>
+                </div>
+                <div class="container">
+                    <h2>150%</h2>
+                    <p>rise in online sales</p>
+                </div>
+                <div class="container">
+                    <h2>75%</h2>
+                    <p>reduction in cost-per-click [CPC]</p>
+                </div>
+                <div class="container">
+                    <h2>300%</h2>
+                    <p>improvement in conversion rate</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
