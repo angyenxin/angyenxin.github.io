@@ -52,7 +52,7 @@
         color: black;
     }
 
-    div.content1 {
+    div.content1-b {
         background-color: #f3f3f3;
         border-radius: 24px;
         display: flex;
@@ -66,7 +66,7 @@
         color: #191a23;
     }
 
-    .content1.text {
+    .content1-b.text {
         color: #191a23;
     }
 
@@ -88,7 +88,7 @@
     }
 
     div.textblock {
-        width: 50%;
+        flex: 1;
         align-content: flex-start;
     }
 
@@ -127,14 +127,13 @@
         gap: 30px;
         justify-content: flex-end;
         align-content: flex-start;
+        width: 100%;
     }
 
     div.container {
         background-color: #ffffff;
         border-radius: 24px;
         padding: 5%;
-        height: 30%;
-        width: 30%;
         margin: 0;
         text-align: center;
     }
@@ -144,7 +143,7 @@
         margin: 10%;
     }
 
-    div.read {
+    div.read1 {
         display: flex;
         flex-direction: row;
         color: #b9ff66;
@@ -153,11 +152,27 @@
         align-items: center;
     }
 
+    div.read2 {
+        display: flex;
+        flex-direction: row;
+        color: #b9ff66;
+        gap: 20px;
+        font-weight: lighter;
+        align-items: center;
+    }
+
+    div.read2 h4 {
+        font-weight: lighter;
+        font-size: 20px;
+    }
+
     div.responsiveblock {
         display: flex;
+        flex: 1;
         flex-direction: column;
         width: fit-content;
     }
+
 
     @media(max-width:1200px) {
 
@@ -175,29 +190,22 @@
             display: none;
         }
 
-        /**content1*/
-        div.content1 {
+        div.content1-b {
+            display: none;
+        }
+
+        /**content1-s*/
+        div.content1-s {
             background: none;
             display: flex;
             flex-direction: column;
             padding: 0;
+            margin: 60px 0px;
         }
 
-        div.content1>.text {
-            display: contents;
-        }
-
-        div.content1>h1 {
-            order: 1;
-        }
-
-        div.content1>img.illustration {
+        img.illustration {
             width: 100%;
-            order: 2;
-        }
-
-        div.content1>p.description {
-            order: 3;
+            margin: auto;
         }
 
         /**content2*/
@@ -222,7 +230,7 @@
             display: flex;
             flex-direction: column;
             flex-wrap: nowrap;
-
+            margin: 20px 0px;
 
         }
 
@@ -230,6 +238,9 @@
             display: none;
         }
 
+        div.read1 {
+            display: none;
+        }
     }
 
     @media (min-width:1130px) {
@@ -246,6 +257,15 @@
             flex: 1;
         }
 
+        div.container {
+            background-color: #ffffff;
+            border-radius: 24px;
+            padding: 5%;
+            height: 30%;
+            width: 30%;
+            margin: 0;
+            text-align: center;
+        }
 
         div.wrap {
             flex-direction: row;
@@ -254,6 +274,14 @@
         }
 
         div.title1 {
+            display: none;
+        }
+
+        div.content1-s {
+            display: none;
+        }
+
+        div.read2 {
             display: none;
         }
     }
@@ -279,7 +307,7 @@
 
     </div>
 
-    <div class="content1">
+    <div class="content1-b">
         <img class="illustration" src="./images/illustration.png" alt="Illustration">
         <div class="text">
             <h1>Proven Success Stories</h1>
@@ -288,6 +316,14 @@
                 PPC, social media, or web design, these use cases highlight the tangible impact of our work. Explore the
                 successes and envision what we can achieve together.</p>
         </div>
+    </div>
+    <div class="content1-s">
+        <h1>Proven Success Stories</h1>
+        <img class="illustration" src="./images/illustration.png" alt="Illustration">
+        <p class="description">See how our innovative digital marketing strategies have transformed businesses.
+            Whether through SEO,
+            PPC, social media, or web design, these use cases highlight the tangible impact of our work. Explore the
+            successes and envision what we can achieve together.</p>
     </div>
 
     <div class="content2">
@@ -306,7 +342,7 @@
                         visibility,
                         drive
                         traffic, and boost sales.</p>
-                    <div class="read">
+                    <div class="read1">
                         <img src="./images/readbtn.png" alt="read button" width="50px" height="50px">
                         <h4>Read More</h4>
                     </div>
@@ -330,6 +366,10 @@
                     <h2>300%</h2>
                     <p>improvement in conversion rate</p>
                 </div>
+            </div>
+            <div class="read2">
+                <img src="./images/readbtn.png" alt="read button" width="50px" height="50px">
+                <h4>Read More</h4>
             </div>
         </div>
     </div>
