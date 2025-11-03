@@ -19,6 +19,11 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav img {
+        width: 100%;
     }
 
     div.section2 {
@@ -31,6 +36,20 @@
     li {
         display: flex;
         flex-direction: row;
+        gap: 20px;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding-left: 0px;
+    }
+
+    ul.highlight {
+        background-color: #b9ff66;
+        border-radius: 5px;
+        padding: 3px 10px;
     }
 
     button.request {
@@ -88,8 +107,9 @@
     }
 
     div.textblock {
-        flex: 1;
-        align-content: flex-start;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     div.title2 h2 {
@@ -101,11 +121,6 @@
         margin-top: 0px;
         width: max-content;
         padding: 0px 20px;
-    }
-
-    .content2 .text h3 {
-        font-weight: lighter;
-        font-size: 30px;
     }
 
     .content2 .text h4 {
@@ -174,17 +189,12 @@
     }
 
 
-    @media(max-width:1200px) {
-
-        ul,
-        button.request {
-            font-size: small;
-        }
-
-    }
 
     /**Responsive smaller screen*/
     @media(max-width:1130px) {
+        body {
+            margin: 50px 30px;
+        }
 
         div.section2 {
             display: none;
@@ -201,6 +211,10 @@
             flex-direction: column;
             padding: 0;
             margin: 60px 0px;
+        }
+
+        div.content1-s h1 {
+            font-size: 40px;
         }
 
         img.illustration {
@@ -222,8 +236,9 @@
         div.title1 h2 {
             background-color: #191a23;
             color: #b9ff66;
-            font-size: 36px;
+            font-size: 30px;
             margin-top: 0px;
+            margin-bottom: 30px;
         }
 
         div.wrap {
@@ -243,6 +258,13 @@
         }
     }
 
+    .content2 .text h3 {
+        font-weight: lighter;
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    /**Adjustment for not affect the big screen*/
     @media (min-width:1130px) {
         .hamburger {
             display: none;
@@ -284,6 +306,12 @@
         div.read2 {
             display: none;
         }
+
+        .content2 .text h3 {
+            font-weight: lighter;
+            font-size: 30px;
+            margin-top: -30px;
+        }
     }
 </style>
 
@@ -291,13 +319,13 @@
 
     <div class="nav">
         <div class="section1">
-            <img src="./images/positivus.png" alt="Positivus Logo" width="">
+            <img src="./images/positivus.png" alt="Positivus Logo">
         </div>
         <div class="section2">
             <li>
                 <ul>About us</ul>
                 <ul>Services</ul>
-                <ul>Use Cases</ul>
+                <ul class="highlight">Use Cases</ul>
                 <ul>Pricing</ul>
                 <ul>Blog</ul>
             </li>
@@ -342,10 +370,10 @@
                         visibility,
                         drive
                         traffic, and boost sales.</p>
-                    <div class="read1">
-                        <img src="./images/readbtn.png" alt="read button" width="50px" height="50px">
-                        <h4>Read More</h4>
-                    </div>
+                </div>
+                <div class="read1">
+                    <img src="./images/readbtn.png" alt="read button" width="50px" height="50px">
+                    <h4>Read More</h4>
                 </div>
             </div>
 
