@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flex Box 1</title>
-    <link rel="stylesheet" href="./css/flexbox1style.css">
-
-    <style>
         body {
             background-color: #f6f5ef;
             margin: 30px 200px;
@@ -34,7 +24,7 @@
         /**Child images*/
         .c-a .img {
             border-radius: 7px;
-            background-image: url(./images/building.jpg);
+            background-image: url(../images/building.jpg);
             width: calc(100% - 40px);
             aspect-ratio: 1 / 1;
             height: 50%;
@@ -44,7 +34,7 @@
 
         .c-b .img {
             border-radius: 7px;
-            background-image: url(./images/room.jpg);
+            background-image: url(../images/room.jpg);
             width: calc(100% - 40px);
             aspect-ratio: 1 / 1;
             height: 50%;
@@ -54,7 +44,7 @@
 
         .c-c .img {
             border-radius: 7px;
-            background-image: url(./images/house.jpg);
+            background-image: url(../images/house.jpg);
             width: calc(100% - 40px);
             aspect-ratio: 1 / 1;
             height: 50%;
@@ -71,35 +61,3 @@
             font-size: medium;
             color: rgba(0, 0, 0, 0.553);
         }
-    </style>
-</head>
-
-<body>
-    <div class="container">
-        <div class="c-a">
-            <div class="img"></div>
-            <div class="text">
-                <h1>Residential projects</h1>
-                <p>We build sustainable and modern homes for comfortable living.</p>
-            </div>
-        </div>
-
-        <div class="c-b">
-            <div class="img"></div>
-            <div class="text">
-                <h1>Commercial spaces</h1>
-                <p>We create efficient, inspiring workspaces for businesses of all sizes.</p>
-            </div>
-        </div>
-
-        <div class="c-c">
-            <div class="img"></div>
-            <div class="text">
-                <h1>Infrastructure works</h1>
-                <p>We develop strong, reliable infrastructure for growing communities.</p>
-            </div>
-        </div>
-    </div>
-</body>
-
-</html>

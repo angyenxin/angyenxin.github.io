@@ -1,0 +1,76 @@
+        div.fullnav {
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            align-items: center;
+            margin: auto;
+            padding: 50px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        div.halfnav {
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            padding: 50px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        div.mininav {
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            padding: 50px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        div.section1 {
+            width: 30px;
+            justify-content: flex-start;
+        }
+
+        div.section2 {
+            display: flex;
+            flex: 1 1 auto;
+            justify-content: center;
+            align-items: center;
+            margin-left: 180px;
+        }
+
+        li {
+            display: flex;
+            flex-direction: row;
+            font-family: "Archivo", sans-serif;
+        }
+
+        ul:hover {
+            color: #f9612b;
+        }
+
+        div.section3 {
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: row;
+            gap: 30px;
+        }
+
+        button {
+            background-color: #f9612b;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            padding: 15px 20px;
+            position: relative;
+        }
+
+        h1 {
+            font-family: "Archivo", sans-serif;
+            font-size: medium;
+        }
+
+        .phonecall {
+            margin: auto;
+        }
