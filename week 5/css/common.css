@@ -49,3 +49,54 @@ h1 {
     margin-bottom: 0;
     font-size: 60px;
 }
+
+/*request*/
+button.request {
+    background-color: transparent;
+    border: black, solid 1.5px;
+    border-radius: 14px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: medium;
+    padding: 20px 35px;
+}
+
+button.request:hover {
+    background-color: black;
+    color: #f7f7f7;
+}
+
+button.request:active {
+    background-color: #b9ff66;
+    color: black;
+}
+
+/**media query*/
+/**nav*/
+
+@media(min-width:1197px) {
+
+    .hamburger {
+        display: none;
+    }
+}
+
+/*nav-m*/
+@media(max-width:1197px) {
+    ul {
+        display: none;
+    }
+}
+
+/*nav-s*/
+@media(max-width:800px) {
+
+    button.request {
+        display: none;
+    }
+}
+
+@media(max-width:1197px) {
+    h1 {
+        font-size: 40px;
+    }
+}

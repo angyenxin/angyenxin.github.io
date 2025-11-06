@@ -23,25 +23,6 @@ p {
     margin-bottom: 35px;
 }
 
-button.request {
-    background-color: transparent;
-    border: black, solid 1.5px;
-    border-radius: 14px;
-    font-family: "Space Grotesk", sans-serif;
-    font-size: medium;
-    padding: 20px 35px;
-}
-
-button.request:hover {
-    background-color: black;
-    color: #f7f7f7;
-}
-
-button.request:active {
-    background-color: #b9ff66;
-    color: black;
-}
-
 button.consultation {
     background-color: black;
     border: black, solid 1.5px;
