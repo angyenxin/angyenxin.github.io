@@ -3,9 +3,10 @@
         margin: 50px 100px;
     }
 
-    ul.highlight {
+    li.highlight {
         background-color: #b9ff66;
         border-radius: 5px;
+        padding: 0px 20px;
     }
 
     button.request {
@@ -137,6 +138,60 @@
     }
 
     /*Responsive middle screen*/
+    @media(max-width:1197px) {
+        div.content2 {
+            display: flex;
+            flex-direction: row;
+            padding-top: 50px;
+        }
+
+        img.vector {
+            height: 35px;
+            width: 35px;
+        }
+
+        div.title1 h2 {
+            background-color: #191a23;
+            color: #b9ff66;
+            font-size: 30px;
+            margin-top: 0px;
+            margin-bottom: 30px;
+            font-weight: lighter;
+        }
+
+        div.textblock {
+            width: 100%;
+        }
+
+        div.wrap {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        div.container {
+            width: 45%;
+            height: 40%;
+            text-align: center;
+            margin: 0;
+        }
+
+        div.title2 {
+            display: none;
+        }
+
+        div.read1 {
+            display: none;
+        }
+
+        div.responsiveblock {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            width: 100%;
+        }
+    }
 
 
     /**Responsive smaller screen*/
@@ -231,7 +286,7 @@
     }
 
     /**Adjustment for not affect the big screen*/
-    @media (min-width:800px) {
+    @media (min-width:1197px) {
 
 
         img.vector {
@@ -254,5 +309,11 @@
             font-weight: lighter;
             font-size: 30px;
             margin-top: -30px;
+        }
+    }
+
+    @media (min-width:800px) {
+        .content1-s {
+            display: none;
         }
     }
