@@ -35,6 +35,32 @@ h1 {
     }
 }
 
+
+
+/*request*/
+/* === Reusable Components  === */
+
+button.request {
+    background-color: transparent;
+    border: black, solid 1.5px;
+    border-radius: 14px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: medium;
+    padding: 20px 35px;
+}
+
+button.request:hover {
+    background-color: black;
+    color: #f7f7f7;
+}
+
+button.request:active {
+    background-color: #b9ff66;
+    color: black;
+}
+
+/**media query*/
+/* === Sitewide Elements  === */
 /*nav*/
 div.nav {
     display: flex;
@@ -67,32 +93,6 @@ li {
     padding: 0px 10px;
     height: 30px;
 }
-
-/*Proven success*/
-
-
-/*request*/
-button.request {
-    background-color: transparent;
-    border: black, solid 1.5px;
-    border-radius: 14px;
-    font-family: "Space Grotesk", sans-serif;
-    font-size: medium;
-    padding: 20px 35px;
-}
-
-button.request:hover {
-    background-color: black;
-    color: #f7f7f7;
-}
-
-button.request:active {
-    background-color: #b9ff66;
-    color: black;
-}
-
-/**media query*/
-/**nav*/
 
 @media(min-width:1260px) {
 

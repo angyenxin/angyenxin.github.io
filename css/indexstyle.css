@@ -89,10 +89,6 @@
             margin-bottom: 30px;
         }
 
-        .exe .container:last-child {
-            grid-column: 1 / -1;
-        }
-
         div.container {
             flex: 0 0 calc(33.333% - 40px);
             box-sizing: border-box;
@@ -105,10 +101,33 @@
             text-align: center;
         }
 
+        @media (min-width: 901px) {
+
+            /*
+     * This targets an element that is the 4th child AND the 2nd to last,
+     * which is only true if there are exactly 5 items.
+     * We make it occupy the first column of the second row.
+    */
+            .exe .container:nth-child(4):nth-last-child(2) {
+                grid-column: 1 / 2;
+            }
+
+            /*
+     * This targets the 5th child that is also the last child.
+     * It starts at the second grid line and spans the next two columns,
+     * effectively filling the rest of the row.
+    */
+            .exe .container:nth-child(5):nth-last-child(1) {
+                grid-column: 2 / span 2;
+            }
+        }
+
         .container text {
             text-decoration: none;
             color: aquamarine;
         }
+
+
 
         h2.name {
             color: #F1DBBF;
