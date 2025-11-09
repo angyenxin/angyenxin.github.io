@@ -35,9 +35,6 @@ h1 {
     }
 }
 
-
-
-/*request*/
 /* === Reusable Components  === */
 
 button.request {
@@ -59,7 +56,7 @@ button.request:active {
     color: black;
 }
 
-/**media query*/
+
 /* === Sitewide Elements  === */
 /*nav*/
 div.nav {
@@ -94,6 +91,11 @@ li {
     height: 30px;
 }
 
+li:hover {
+    color: #b9ff66;
+}
+
+/**media query*/
 @media(min-width:1260px) {
 
     img.hamburger {

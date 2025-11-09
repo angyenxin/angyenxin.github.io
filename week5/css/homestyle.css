@@ -83,7 +83,7 @@ h1 {
     }
 }
 
-@media(max-width:900px) {
+@media(max-width:800px) {
     body {
         margin: 50px 50px;
     }
@@ -123,7 +123,7 @@ h1 {
     }
 }
 
-@media(min-width:900px) {
+@media(min-width:801px) {
     div.content-s {
         display: none;
     }
