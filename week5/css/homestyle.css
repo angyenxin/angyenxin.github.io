@@ -10,8 +10,12 @@ div.content-b {
 }
 
 div.block1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     width: 40%;
-    gap: 100px;
+    gap: 20px;
+
 }
 
 p li {
@@ -28,6 +32,10 @@ img.walkietakie {
     height: 50%;
 }
 
+img.brand {
+    width: 100%;
+}
+
 button.consultation {
     background-color: black;
     border: black, solid 1.5px;
@@ -36,6 +44,7 @@ button.consultation {
     font-size: medium;
     color: #f7f7f7;
     padding: 20px 35px;
+    width: 60%;
 }
 
 button.consultation:hover {
@@ -56,11 +65,9 @@ button.consultation:active {
     flex-direction: row;
     justify-content: space-between;
     margin: 35px 0px 35px 0px;
+    gap: 5%;
 }
 
-h1 {
-    margin: 30px 0px;
-}
 
 @media(max-width:1260px) {
     div.sponsorer {
@@ -79,6 +86,10 @@ h1 {
     div.content-s {
         display: flex;
         flex-direction: column;
+        width: 50%;
+    }
+
+    button.consultation {
         width: 100%;
     }
 }
@@ -87,6 +98,11 @@ h1 {
     body {
         margin: 50px 50px;
     }
+
+    h1 {
+        margin: 30px 0px;
+    }
+
 
     div.content-s {
         display: flex;
@@ -115,7 +131,7 @@ h1 {
 
     div.block1 {
         width: 100%;
-        gap: 100px;
+        gap: 0px;
     }
 
     button.consultation {
@@ -128,3 +144,7 @@ h1 {
         display: none;
     }
 }
+
+
+/*button*/
+@media(max-width:1260px) {}
