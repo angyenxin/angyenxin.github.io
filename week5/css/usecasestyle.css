@@ -53,7 +53,10 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        gap: 80px;
+        width: 50%;
     }
+
 
     div.title2 h2 {
         background-color: #b9ff66;
@@ -85,10 +88,6 @@
         gap: 5%;
     }
 
-    div.textblock {
-        width: 100%;
-    }
-
     div.container {
 
         background-color: #ffffff;
@@ -98,6 +97,10 @@
         width: 45%;
         height: 45%;
         text-align: center;
+    }
+
+    div.content1-b.text {
+        gap: 50px;
     }
 
     .container h2 {
@@ -134,7 +137,15 @@
         display: flex;
         flex-direction: row;
         flex: 1;
-        gap: 100px;
+        gap: 10%;
+    }
+
+
+
+    div.text {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
     }
 
     /*Responsive middle screen*/
@@ -168,12 +179,15 @@
             flex-direction: column;
             flex-wrap: wrap;
             gap: 30px;
+            justify-content: center;
         }
 
         div.container {
+            display: flex;
+            flex-direction: column;
             width: 45%;
             height: 40%;
-            text-align: center;
+            justify-content: center;
             margin: 0;
         }
 
@@ -189,8 +203,20 @@
             display: flex;
             flex: 1;
             flex-direction: column;
-            width: 100%;
+            width: fit-content;
+            gap: 0px;
         }
+
+        div.textblock {
+            gap: 0px;
+        }
+
+        div.text {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
     }
 
 
@@ -271,10 +297,7 @@
         }
 
         div.responsiveblock {
-            display: flex;
-            flex: 1;
-            flex-direction: column;
-            width: fit-content;
+            gap: 40px;
         }
     }
 

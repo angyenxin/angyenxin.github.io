@@ -6,6 +6,7 @@ div.content-b {
     gap: 50px;
     padding-top: 30px;
     padding-bottom: 50px;
+    align-items: center;
 }
 
 div.block1 {
