@@ -1,0 +1,208 @@
+@import "~@flaticon/flaticon-uicons/css/all/all";
+
+* {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    margin: 100px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 20px;
+}
+
+/*gradient*/
+div.gradient {
+    position: absolute;
+    background-color: rgba(135, 206, 250, 0.582);
+    width: 30%;
+    height: 30%;
+    border-radius: 300px;
+    filter: blur(70px);
+}
+
+/*container*/
+div.container,
+div.container2 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 24px;
+    padding: 20px;
+    width: 50%;
+    gap: 30px;
+    box-shadow: -10px 10px 50px rgba(0, 0, 0, 0.16);
+    background-color: white;
+}
+
+img.thumbnail {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 16px;
+}
+
+.icon {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+
+.icon img {
+    width: 5%;
+    margin: auto;
+    opacity: 30%;
+}
+
+div.iconntext {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.buildingicon {
+    width: 20px;
+    margin: auto;
+    opacity: 10%;
+}
+
+.iconround {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(211, 211, 211, 0.621);
+    border-radius: 100px;
+    width: 12%;
+    aspect-ratio: 1/1;
+
+}
+
+.textblock {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.descnlove {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 10%;
+    align-items: center;
+}
+
+p.purple {
+    color: blueviolet;
+}
+
+p.bold {
+    color: black;
+}
+
+div.text {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    font-weight: bold;
+}
+
+svg {
+    height: 50%;
+    width: 10%;
+    fill: blueviolet;
+}
+
+p {
+    color: grey;
+}
+
+path {
+    width: 100%;
+}
+
+/*Smallcard*/
+div.smallcard {
+    position: absolute;
+    left: 320px;
+    bottom: 210px;
+}
+
+div.smallcard2 {
+    position: absolute;
+    right: 205px;
+    bottom: 210px;
+}
+
+div.smallcard,
+div.smallcard2 {
+    background-color: white;
+    border-radius: 16px;
+    width: 20%;
+    height: 17%;
+    padding: 20px 25px;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.16);
+}
+
+
+img.round {
+    border-radius: 100px;
+    height: 50%;
+}
+
+div.descblock {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+div.text {
+    display: flex;
+    flex-direction: row;
+}
+
+div.smallcard h2,
+div.smallcard2 h2 {
+    margin-bottom: 3%;
+}
+
+/*Progress bar*/
+div.pb-border {
+    border: blueviolet solid 2px;
+    border-radius: 10px;
+    height: 15%;
+    overflow: hidden;
+}
+
+div.pg-completed {
+    background-color: blueviolet;
+    height: 24px;
+    width: 60%;
+}
+
+@media (max-width:1120px) {
+
+    div.container,
+    div.container2 {
+        position: relative;
+    }
+
+    div.smallcard {
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+    }
+
+    div.smallcard2 {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+    }
+}
