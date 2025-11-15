@@ -53,7 +53,7 @@ img.thumbnail {
 }
 
 .icon img {
-    width: 5%;
+    width: 40%;
     margin: auto;
     opacity: 30%;
 }
@@ -137,7 +137,9 @@ div.smallcard2 {
 }
 
 div.smallcard,
-div.smallcard2 {
+div.smallcard2,
+div.rs-smallcard,
+div.rs-smallcard2 {
     background-color: white;
     border-radius: 16px;
     width: 20%;
@@ -188,21 +190,93 @@ div.pg-completed {
 }
 
 @media (max-width:1120px) {
+    body {
+        margin: 50px;
+    }
 
-    div.container,
-    div.container2 {
-        position: relative;
+    div.gradient {
+        position: absolute;
+        left: 300px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 100px;
+    }
+
+
+    .container {
+        width: 70%;
+    }
+
+    svg {
+        width: 5%;
+        fill: blueviolet;
     }
 
     div.smallcard {
         position: absolute;
-        left: 0px;
-        bottom: 0px;
+        left: 300px;
+        bottom: 180px;
+        width: 30%;
     }
 
     div.smallcard2 {
         position: absolute;
+        left: 300px;
+        bottom: -480px;
+        width: 30%;
+    }
+}
+
+@media (min-width:800px) {
+    .responsivesmallcontent {
+        display: none;
+    }
+}
+
+@media (max-width:800px) {
+
+    body {
+        margin: 50px;
+    }
+
+    div.gradient {
+        position: absolute;
         right: 0px;
-        bottom: 0px;
+    }
+
+    .content {
+        display: none;
+    }
+
+    .responsivesmallcontent {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        margin: auto;
+    }
+
+    div.container,
+    div.container2 {
+        width: 80%;
+    }
+
+    img.round {
+        border-radius: 100px;
+        width: 20%;
+    }
+
+
+    div.rs-smallcard,
+    div.rs-smallcard2 {
+        width: 80%;
+    }
+
+    svg {
+        width: 5%;
+        fill: blueviolet;
     }
 }
