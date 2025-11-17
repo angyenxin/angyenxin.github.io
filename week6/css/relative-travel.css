@@ -67,7 +67,7 @@ div.iconntext {
 .buildingicon {
     width: 20px;
     margin: auto;
-    opacity: 10%;
+    opacity: 20%;
 }
 
 .iconround {
@@ -116,7 +116,8 @@ svg {
 }
 
 p {
-    color: grey;
+    color: rgba(128, 128, 128, 0.814);
+    font-weight: 500;
 }
 
 path {
