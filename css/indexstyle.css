@@ -125,6 +125,10 @@
                 grid-column: span 2;
             }
 
+            .exe .container:nth-child(5) {
+                grid-column: span 2;
+            }
+
             /* 2. Target the second-to-last container and make it span 3 columns */
             .exe .container:nth-last-child(2) {
                 grid-column: span 2;
@@ -132,7 +136,7 @@
 
             /* 3. Target the last container and make it span 3 columns */
             .exe .container:last-child {
-                grid-column: span 2;
+                grid-column: span 6;
             }
         }
 
