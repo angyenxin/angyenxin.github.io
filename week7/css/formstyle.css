@@ -1,99 +1,101 @@
+* {
+    margin: 0;
+}
+
 body {
     background-color: rgb(192, 192, 255);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
 div.container {
+    margin: auto;
     background-color: rgb(251, 252, 253);
     border-radius: 20px;
     align-items: center;
     display: flex;
     flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    width: 50%;
+    margin-top: 2%;
+    padding: 50px;
 }
 
 form {
-    width: 50%;
-}
-
-div {
-    width: 100%;
+    width: 80%;
+    max-width: 80%;
 }
 
 input {
     border-radius: 100px;
-    padding: 10px 50px;
+    padding: 5px 50px;
     height: 50px;
-    width: 100%;
+    width: 80%;
 }
 
-input#dob {
-    width: 30%;
+div.row {
+    display: flex;
+    flex-direction: row;
     gap: 5%;
-}
-
-input#fname,
-input#lname {
-    width: 45%;
+    width: 100%;
 }
 
 div .name {
     display: flex;
     flex-direction: row;
-    gap: 5%;
-}
-
-input#dob {
     width: 100%;
+    gap: 3%;
+    justify-content: space-between;
 }
 
 div.favcolor {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    width: 50%;
 }
 
-.input-label {
-    display: none;
-    position: absolute;
-    left: 15px;
-    top: 10px;
-    font-size: 16px;
-    color: #999;
-    pointer-events: none;
+label.labelfavcolor {
+    width: 100%;
 }
 
-.input-field:active .input-label {
-    display: block;
-}
-
-/*
 .input-container {
     position: relative;
-    margin: 20px 0;
+    width: 100%;
 }
 
-/* The actual input field styling 
 .input-field {
     width: 100%;
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: 1px solid #727272;
     border-radius: 25px;
     outline: none;
+    box-sizing: border-box;
 }
 
-transition: all 0.2s ease-in-out;
+.input-label {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    color: #999;
+    pointer-events: none;
+    transition: all 0.2s ease-in-out;
 }
-*/
-*/
-/*
+
 .input-field:focus+.input-label,
 .input-field:not(:placeholder-shown)+.input-label {
-    transform: translateY(-22px) scale(0.8);
-    
-background-color: white;
+    transform: translateY(-25px) scale(0.8);
+    background-color: white;
+    padding: 0 5px;
+    color: #333;
+}
 
-padding: 0 5px;
-
-color: #333;
-
-font-size: 14px;
-}**/
+.submit {
+    width: 100%;
+    background-color: rgb(142, 41, 186);
+    color: aliceblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+    font-weight: bold;
+}

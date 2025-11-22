@@ -16,36 +16,53 @@
     
 </div>-->
         <form action="">
+
             <div class="name">
                 <div class="input-container">
-                    <input type="text" name="input-field" id="fname" placeholder="First Name" required>
+                    <input type="text" id="fname" class="input-field" placeholder=" " required>
                     <label for="fname" class="input-label">First name*</label>
-                    <input type="text" name="input-field" id="lname" placeholder="Last Name" required>
+                </div>
+                <div class="input-container">
+                    <input type="text" id="lname" class="input-field" placeholder=" " required>
                     <label for="lname" class="input-label">Last name*</label>
                 </div>
             </div>
+
             <br>
-            <div>
-                <input type="date" name="dob" id="dob" placeholder="Date of Birth" required>
+
+            <div class="input-container">
+                <input type="date" id="dob" class="input-field" placeholder="" required>
+                <label for="dob" class="input-label">Date of Birth</label>
             </div>
             <br>
-            <div>
-                <input type="email" name="cusemail" id="cusemail" placeholder="Email Address" required>
+
+            <div class="input-container">
+                <input type="email" class="input-field" id="cusemail" placeholder="" required>
+                <label for="cusemail" class="input-label">Email Address*</label>
+            </div>
+
+            <br>
+            <div class="input-container">
+                <input type="url" class="input-field" id="hpurl" placeholder="">
+                <label for="hpurl" class="input-label">Home Page*</label>
             </div>
             <br>
-            <div>
-                <input type="url" name="hpurl" id="hpurl" placeholder="Home Page URL">
+
+            <div class="input-container">
+                <div class="favcolor">
+                    <label for="favcolor" class="labelfavcolor">Favourite Colour</label>
+                    <input type="color" class="input-field" id="favcolor">
+                </div>
+            </div>
+
+            <br>
+
+            <div class="input-container">
+                <input type="textarea" class="input-field" id="bio" placeholder="">
+                <label for="bio" class="input-label">Bio*</label>
             </div>
             <br>
-            <div class="favcolor">
-                <label for="favcolor">Favourite Colour</label>
-                <input type="color" name="favcolor" id="favcolor">
-            </div>
-            <br>
-            <div>
-                <input type="textarea" name="bio" id="bio" placeholder="Bio / Self-Introduction">
-            </div>
-            <input type="submit">
+            <input class="submit" type="submit">
 
         </form>
     </div>
