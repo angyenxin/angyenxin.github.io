@@ -56,6 +56,14 @@ button.request:active {
     color: black;
 }
 
+button.requestmq-m {
+    background-color: transparent;
+    border: black, solid 1.5px;
+    border-radius: 14px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: medium;
+    padding: 20px 35px;
+}
 
 /* === Sitewide Elements  === */
 /*nav*/
@@ -79,6 +87,7 @@ ul {
     flex-direction: row;
     gap: 20px;
     margin: 0px 30px;
+    align-items: center;
 }
 
 li {
@@ -125,7 +134,7 @@ li:hover {
 
 /**media query*/
 
-@media(max-width:1290px) {
+@media(max-width:1308px) {
     li {
         font-size: small;
     }
@@ -140,10 +149,14 @@ li:hover {
     }
 }
 
+/*avoid disturbance for bigger nav*/
 @media(min-width:1108px) {
 
-
     .menu-toggle {
+        display: none;
+    }
+
+    button.requestmq-m {
         display: none;
     }
 }
@@ -151,7 +164,7 @@ li:hover {
 /*nav-s*/
 @media(max-width:1108px) {
 
-    .section2 {
+    .section2.active {
         display: none;
         flex-direction: column;
         background-color: #1b1212;
@@ -170,16 +183,38 @@ li:hover {
         display: flex;
     }
 
-    ul {
+    .section2 ul {
         display: none;
     }
 
-    .section2 {
+    .section2.active ul {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+
+    }
+
+    li {
+        display: flex;
+        font-size: larger;
+        gap: 20%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .submenu li {
+        color: black;
+    }
+
+    .section2.active {
         justify-content: end;
     }
 
     button.request {
-        display: none;
+        display: block;
+        color: #f7f7f7;
+        font-size: larger;
+        border: #f7f7f7;
     }
 
     .menu-toggle {
@@ -191,5 +226,16 @@ li:hover {
 
     .menu-toggle {
         display: block;
+    }
+
+    div#menu-toggle.menu-toggle.active {
+        color: white;
+    }
+}
+
+@media(max-width:768px) {
+
+    button.requestmq-m {
+        display: none;
     }
 }
